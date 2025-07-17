@@ -2,7 +2,7 @@
   border-right: 2px solid #3b82f6; /* blue cursor */
   white-space: nowrap;
   overflow: hidden;
-  width: 22ch; /* match the max width you used */
+  width: 22ch; /* match the max width used */
   animation: typing 3.5s steps(22), blink 0.75s step-end infinite;
 }
 
