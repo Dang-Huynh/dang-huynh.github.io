@@ -4,6 +4,8 @@
   overflow: hidden;
   width: 22ch; /* match the max width used */
   animation: typing 3.5s steps(22), blink 0.75s step-end infinite;
+  line-height: 1.2; 
+  padding-bottom: 0.2rem; 
 }
 
 @keyframes typing {
