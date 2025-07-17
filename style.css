@@ -1,16 +1,22 @@
 .typing {
   border-right: 2px solid #3b82f6; /* blue cursor */
   white-space: nowrap;
- 
-  width: 22ch; /* match the max width used */
-  animation: typing 3.5s steps(22) forwards, blink 0.75s step-end 3s 5;
+  overflow: hidden;
+  width: 0;
+  animation:
+    typing 3.5s steps(22, end) forwards,
+    blink 0.75s step-end infinite;
+  line-height: 1.2;      
+  padding-bottom: 0.25rem; 
 }
 
+/* Typing animation (writes text) */
 @keyframes typing {
   from { width: 0 }
   to { width: 22ch }
 }
 
+/* Cursor blink animation */
 @keyframes blink {
-  50% { border-color: transparent }
+  50% { border-color: transparent; }
 }
