@@ -1,17 +1,16 @@
-<style>
-  .typing {
-    border-right: 2px solid #3b82f6; /* blue cursor */
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
-  }
+.typing {
+  border-right: 2px solid #3b82f6; /* blue cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 22ch; /* match the max width you used */
+  animation: typing 3.5s steps(22), blink 0.75s step-end infinite;
+}
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 22ch }
+}
 
-  @keyframes blink {
-    50% { border-color: transparent }
-  }
-</style>
+@keyframes blink {
+  50% { border-color: transparent }
+}
