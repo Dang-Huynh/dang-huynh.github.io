@@ -3,7 +3,7 @@
 Welcome to my personal portfolio site!  
 This site showcases my work as a full stack developer — including selected projects and contact info.
 
-🌐 Live Site: [https://danghuynh.github.io](https://danghuynh.github.io)
+🌐 Live Site: [https://dang-huynh.github.io](https://dang-huynh.github.io)
 
 ## Tech Stack
 - HTML5
