@@ -1,22 +1,19 @@
 .typing {
-  border-right: 2px solid #3b82f6; /* blue cursor */
+  border-right: 2px solid #3b82f6;
   white-space: nowrap;
   overflow: hidden;
+  display: inline-block;
   width: 0;
-  animation:
-    typing 3.5s steps(22, end) forwards,
-    blink 0.75s step-end infinite;
-  line-height: 1.2;      
-  padding-bottom: 0.25rem; 
+  animation: typing 3s steps(10, end) forwards, blink 0.75s step-end 4; 
+  line-height: 1.2;
+  padding-bottom: 0.25rem;
 }
 
-/* Typing animation (writes text) */
 @keyframes typing {
   from { width: 0 }
-  to { width: 22ch }
+  to { width: 10ch } /* Adjust this to match the character count */
 }
 
-/* Cursor blink animation */
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% { border-color: transparent }
 }
