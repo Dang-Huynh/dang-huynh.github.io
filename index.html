@@ -227,9 +227,16 @@
 
     <!-- script to remove cursor after typing -->
   <script>
-    setTimeout(() => {
-      document.querySelector('.typing').style.borderRight = 'none';
-    }, 3500); 
-  </script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const typing = document.getElementById("typing-text");
+
+    typing.addEventListener("animationend", (event) => {
+      if (event.animationName === "typing") {
+        typing.style.borderRight = "none";
+      }
+    });
+  });
+</script>
+
   </body>
 </html>
