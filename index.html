@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dang Huynh | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-gray-950 text-gray-100 sticky top-0 z-50 shadow-md">
+      <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Dang Huynh</h1>
+      <p class="text-xl mb-6">Full Stack Developer based in Montreal, QC</p>
+      <a
+        href="#projects"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md"
+        >View My Projects</a
+      >
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-300">
+        I'm a full stack developer with experience designing, developing, and
+        deploying scalable web applications using technologies like React,
+        JavaScript, and Laravel. I specialize in both front-end and back-end
+        development with a strong focus on clean code and user experience.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-20 px-6 bg-gray-800">
+      <h2 class="text-3xl font-semibold text-center mb-8">Tech Stack</h2>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Languages</h3>
+          <p>Java, JavaScript, C#, HTML5, PHP</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Frameworks & Libraries</h3>
+          <p>React, Bootstrap, Tailwind CSS, Spring Boot, Laravel, NodeJS, FXML</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Tools & Platforms</h3>
+          <p>
+            MySQL, MSSQL, AWS (EC2, S3), Azure, Git, Postman, VS Code, IntelliJ
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+      <div class="max-w-5xl mx-auto space-y-12">
+        <!-- Project 1 -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Medical Scheduling System</h3>
+          <p class="text-gray-300 mb-1">
+            A front-end focused medical scheduling website inspired by BonjourSanté.
+          </p>
+          <p class="text-sm text-gray-400">Stack: JavaScript, HTML, CSS</p>
+          <a href="https://github.com/Dang-Huynh/BonjourSante" target="_blank">
+            GitHub (My Fork)
+          </a>
+        </div>
+        <!-- Project 2 -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Movie Explorer Website</h3>
+          <p class="text-gray-300 mb-1">
+            Search platform using the TMDB API to explore real-time movie data. Includes authentication, favorites, and dynamic views.
+          </p>
+          <p class="text-sm text-gray-400">Stack: JavaScript, React, TMDB API, React Router DOM</p>
+          <a href="https://github.com/Dang-Huynh/movie-explorer" target="_blank">
+            GitHub (My Fork)
+          </a>
+        </div>
+        <!-- Project 3 -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Real Estate Website (RE/MAX Clone)</h3>
+          <p class="text-gray-300 mb-1">
+            A real estate platform clone featuring property listings, search filters, blogs, and authentication.
+          </p>
+          <p class="text-sm text-gray-400">Stack: Laravel, phpMyAdmin, Bootstrap</p>
+          <a href="https://github.com/Dang-Huynh/realestate" target="_blank">
+            GitHub (My Fork)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 bg-gray-800 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+      <p class="mb-4">danghuynh98@gmail.com</p>
+      <div class="flex justify-center space-x-6">
+        <a
+          href="https://github.com/"
+          class="text-blue-400 hover:text-blue-500"
+          target="_blank"
+          >GitHub</a
+        >
+        <a
+          href="https://linkedin.com/"
+          class="text-blue-400 hover:text-blue-500"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <footer class="text-center py-6 text-gray-500 text-sm">
+      © 2025 Dang Huynh. Built with HTML & Tailwind CSS.
+    </footer>
+  </body>
+</html>
